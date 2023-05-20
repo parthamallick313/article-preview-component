@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Article preview component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        font-weight: bold;
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body
+    class="flex flex-col min-w-[23.4375rem] min-h-screen items-center justify-center gap-1 text-[0.8125rem] bg-[hsl(210,46%,95%)]"
+  >
+    <header></header>
+
+    <main class="max-w-[23.4375rem] px-6 md:max-w-[44.25rem]">
+      <div class="relative">
+        <div
+          class="flex flex-col rounded-xl shadow-xl overflow-hidden md:flex-row md:h-[240.5px]"
+        >
+          <div class="h-[13.5rem] md:flex-1 md:h-full md:bg-img">
+            <img src="/images/drawers.jpg" alt="" class="md:hidden" />
+          </div>
+
+          <div
+            class="relative flex flex-col justify-center gap-4 p-8 pb-4 bg-white md:flex-[1.5]"
+          >
+            <h1 class="text-base font-bold text-[hsl(217,19%,35%)]">
+              Shift the overall look and feel by adding these wonderful touches
+              to furniture in your home
+            </h1>
+
+            <p class="text-[hsl(214,17%,51%)]">
+              Ever been in a room and felt like something was missing? Perhaps
+              it felt slightly bare and uninviting. I’ve got some simple tips to
+              help you make any room feel complete.
+            </p>
+
+            <div class="flex items-center justify-between mt-4 md:mt-0">
+              <div class="flex items-center gap-3">
+                <img
+                  src="/images/avatar-michelle.jpg"
+                  alt=""
+                  class="w-10 rounded-full"
+                />
+                <div class="flex flex-col gap-1 text-xs">
+                  <p class="font-bold text-[hsl(217,19%,35%)]">
+                    Michelle Appleton
+                  </p>
+                  <p class="text-[hsl(214,17%,51%)]">28 Jun 2020</p>
+                </div>
+              </div>
+              <div
+                id="share-btn"
+                class="p-2 bg-[hsl(210,46%,95%)] rounded-full cursor-pointer z-10"
+              >
+                <img
+                  src="/images/icon-share.svg"
+                  alt=""
+                  class="w-[0.875rem] share-dark"
+                />
+                <img
+                  src="/images/icon-share-2.svg"
+                  alt=""
+                  class="hidden w-[0.875rem] share-light"
+                />
+              </div>
+            </div>
+
+            <div
+              class="absolute flex items-center justify-between bottom-0 left-0 w-full h-16 px-8 bg-[hsl(217,19%,35%)] opacity-0 transition-all duration-300 -z-10 md:hidden"
+              id="mobile-share"
+            >
+              <div class="flex items-center gap-4">
+                <p class="text-[hsl(212,23%,69%)] uppercase tracking-[0.25em]">
+                  share
+                </p>
+
+                <img
+                  src="/images/icon-facebook.svg"
+                  alt=""
+                  class="cursor-pointer"
+                />
+                <img
+                  src="/images/icon-twitter.svg"
+                  alt=""
+                  class="cursor-pointer"
+                />
+                <img
+                  src="/images/icon-pinterest.svg"
+                  alt=""
+                  class="cursor-pointer"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-20 -right-[4.5rem] hidden invisible items-center justify-center gap-4 h-12 px-8 bg-[hsl(217,19%,35%)] rounded-xl shadow-[10px_0px_20px_rgba(0,0,0,0.1)] opacity-0 z-10 md:flex desktop-share"
+        >
+          <p class="text-[hsl(212,23%,69%)] uppercase tracking-[0.25em]">
+            share
+          </p>
+
+          <img src="/images/icon-facebook.svg" alt="" class="cursor-pointer" />
+          <img src="/images/icon-twitter.svg" alt="" class="cursor-pointer" />
+          <img src="/images/icon-pinterest.svg" alt="" class="cursor-pointer" />
+        </div>
+
+        <div
+          class="absolute hidden invisible bottom-[4.5rem] right-9 w-6 h-6 bg-[hsl(217,19%,35%)] shadow-xl rotate-45 opacity-0 z-0 md:block desktop-share"
+        ></div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/parthamallick313"
+          >Partha Mallick</a
+        >.
+      </div>
+    </footer>
+    <script src="/dist/script.js"></script>
+  </body>
+</html>
